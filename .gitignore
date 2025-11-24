@@ -1,0 +1,46 @@
+# Gitignore everything by default
+*
+*/
+
+# Python cache files
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# Then whitelist the portable configs
+!.gitignore
+!README.md
+!CLAUDE.md
+!PYTHON_VENV_GUIDE.md
+
+# Agents
+!agents/
+!agents/**
+
+# Commands
+!commands/
+!commands/**
+
+# Skills
+!skills/
+!skills/**
+
+# Baselines
+!baselines/
+!baselines/**
+
+# Scripts (if you want them portable)
+!scripts/
+!scripts/**
+
+# Settings (review - may contain secrets)
+!settings.json
+
+# venv README (documentation only, not the actual venv)
+!venv/
+!venv/README.md
+
+# Re-exclude Python cache files even if whitelisted above
+__pycache__/
+*.pyc
+*.pyo

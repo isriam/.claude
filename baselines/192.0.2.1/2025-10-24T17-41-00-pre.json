@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "hostname": "192.0.2.1",
+    "vendor": "fortinet",
+    "phase": "pre",
+    "timestamp": "2025-10-24T17:41:00",
+    "label": "pre-upgrade-baseline",
+    "collected_by": "network-baseline skill"
+  },
+  "raw_outputs": {
+    "system_status": "FortiGate-91G v7.4.9,build2829,250924 (GA.M)",
+    "hardware": "Model: FortiGate-91G, CPU: ARMv8 (8 cores), RAM: 7547 MB",
+    "performance": "CPU: 0% user, 0% system, 100% idle, Memory: 30.8% used"
+  },
+  "parsed_data": {
+    "system": {
+      "version": "FortiGate-91G v7.4.9,build2829,250924 (GA.M)",
+      "model": "FortiGate-91G",
+      "serial": "FGT91GTK24002843",
+      "bios": "06000100",
+      "cpu_cores": 8,
+      "ram_mb": 7547,
+      "disk_emmc_mb": 9982,
+      "disk_nvme_mb": 114473
+    },
+    "bgp": {
+      "neighbor_count": 0,
+      "neighbors": [],
+      "configured": false
+    },
+    "ospf": {
+      "neighbor_count": 0,
+      "neighbors": [],
+      "configured": false
+    },
+    "interfaces": {
+      "total": 10,
+      "up": 4,
+      "down": 6,
+      "details": [
+        {"name": "a", "status": "up", "speed": "1000Mbps", "duplex": "full"},
+        {"name": "b", "status": "up", "speed": "1000Mbps", "duplex": "full"},
+        {"name": "port1", "status": "down"},
+        {"name": "port2", "status": "down"},
+        {"name": "port3", "status": "down"},
+        {"name": "port4", "status": "down"},
+        {"name": "port5", "status": "up", "speed": "1000Mbps", "duplex": "full"},
+        {"name": "port6", "status": "down"},
+        {"name": "wan1", "status": "up", "speed": "1000Mbps", "duplex": "full", "mode": "dhcp", "ip": "72.201.115.103/25", "medium": "copper"},
+        {"name": "wan2", "status": "up", "speed": "10000Mbps", "duplex": "full", "mode": "static", "ip": "10.255.1.1/24", "medium": "fiber"},
+        {"name": "modem", "status": "down", "mode": "pppoe"}
+      ]
+    },
+    "ip_addresses": [
+      {"interface": "wan1", "ip": "72.201.115.103", "mask": "255.255.255.128"},
+      {"interface": "wan2", "ip": "10.255.1.1", "mask": "255.255.255.0"},
+      {"interface": "lan", "ip": "192.0.2.1", "mask": "255.255.255.0"},
+      {"interface": "quarantine", "ip": "10.255.11.1", "mask": "255.255.255.0"},
+      {"interface": "meow6277-6g", "ip": "172.31.0.254", "mask": "255.255.255.0"},
+      {"interface": "vlan-10", "ip": "198.18.1.1", "mask": "255.255.255.0"}
+    ],
+    "arp": {
+      "entry_count": 49,
+      "sample_entries": [
+        {"ip": "192.0.2.12", "mac": "bc:24:11:13:e1:f7", "interface": "lan"},
+        {"ip": "10.255.1.2", "mac": "b4:b2:e9:a1:97:42", "interface": "wan2"},
+        {"ip": "72.201.115.1", "mac": "54:a6:19:bb:12:be", "interface": "wan1"}
+      ]
+    },
+    "environment": {
+      "cpu_utilization": 0,
+      "memory_utilization": 30.8,
+      "memory_total_kb": 7728572,
+      "memory_used_kb": 2384008,
+      "memory_free_kb": 4355828,
+      "sessions_current": 289,
+      "sessions_max_1min": 303,
+      "network_usage_1min_in_kbps": 6854,
+      "network_usage_1min_out_kbps": 6802
+    },
+    "security_databases": {
+      "virus_db": "1.00000(2018-04-09 18:07)",
+      "ips_db": "34.00088(2025-09-23 00:44)",
+      "app_db": "6.00741(2015-12-01 02:30)",
+      "ips_malicious_url_db": "5.00544(2025-09-23 01:18)"
+    }
+  }
+}
