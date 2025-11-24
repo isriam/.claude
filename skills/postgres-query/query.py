@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/home/jeremy/.claude/venv/bin/python3
 """
 PostgreSQL Query Executor
 Executes SQL queries against PostgreSQL databases with user-provided credentials.
