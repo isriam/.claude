@@ -25,9 +25,8 @@
 !skills/
 !skills/**
 
-# Baselines
-!baselines/
-!baselines/**
+# Baselines folder excluded - contains device-specific output data
+# (the network-baseline skill itself is included in skills/)
 
 # Scripts (if you want them portable)
 !scripts/
