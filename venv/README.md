@@ -1,10 +1,16 @@
-# Claude Code Shared Virtual Environment
+# Claude Code Python Virtual Environment
 
-This is a shared Python virtual environment for all Claude Code skills and custom scripts.
+This is a shared Python virtual environment used by Claude Code for executing Python scripts and importing modules.
 
 ## Purpose
 
-Instead of installing Python packages system-wide or creating separate venvs for each skill, all Claude Code Python scripts use this shared environment.
+Claude Code uses this virtual environment whenever it needs to run Python code - whether for custom skills, one-off scripts, or any Python execution during conversations. This provides:
+
+- **Consistent environment** - All Python execution uses the same package versions
+- **Isolation** - Won't interfere with system Python or other projects
+- **Convenience** - Packages installed once are available for all Claude Code tasks
+
+See `~/.claude/CLAUDE.md` for integration details and usage guidelines.
 
 ## Installed Packages
 
@@ -19,7 +25,7 @@ Core packages currently installed:
 
 ### In Python Scripts
 
-**Option 1: Use shebang (recommended)**
+**Option 1: Direct venv Python (recommended)**
 ```python
 #!/home/jeremy/.claude/venv/bin/python3
 
@@ -39,7 +45,7 @@ import pandas as pd
 
 ### Installing New Packages
 
-To add a package for use in skills:
+To add a package for Claude Code to use:
 ```bash
 ~/.claude/venv/bin/pip install <package-name>
 ```
@@ -79,14 +85,10 @@ python3 -m venv ~/.claude/venv
 ~/.claude/venv/bin/python3 --version
 ```
 
-## Skills Using This Venv
-
-- **libreoffice-calc** - ODS spreadsheet analysis
-- (Add more as you create them)
-
 ## Notes
 
 - This venv is isolated from your system Python
 - It won't interfere with other Python projects
-- All Claude Code skills should use this venv for consistency
+- All Claude Code Python execution should use this venv for consistency
 - If you need different package versions for a specific project, create a separate venv for that project
+- Claude Code will reference this venv automatically for Python tasks

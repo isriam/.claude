@@ -17,13 +17,13 @@
 - Hostname: [Your hostname]
 - User: [Your username]
 
-# Python Environment for Skills
+# Python Environment
 - **Shared Virtual Environment**: `~/.claude/venv`
-- All custom Python skills and scripts should use this venv
-- Installed packages: odfpy, pandas, requests, matplotlib
-- When creating Python scripts for skills, use: `#!/usr/bin/env python3` (ensure ~/.claude/venv is activated)
-- Or add to sys.path: `sys.path.insert(0, os.path.expanduser('~/.claude/venv/lib/python*/site-packages'))`
+- Claude Code uses this venv for all Python execution (skills, scripts, ad-hoc tasks)
+- See `~/.claude/venv/README.md` for detailed documentation
+- Installed packages: odfpy, pandas, requests, matplotlib, numpy
 - To install new packages: `~/.claude/venv/bin/pip install <package-name>`
+- When creating Python scripts: use `#!/home/jeremy/.claude/venv/bin/python3` shebang
 
 # Skills Storage Locations
 - **Local Skills**: `~/.claude/skills/` (standard location)
@@ -66,4 +66,5 @@
 - **Functional Code**: Use functional and stateless approaches where they improve clarity
 - **Clean Logic**: Keep core logic clean and push implementation details to the edges
 - **File Organization**: Balance file organization with simplicity - use an appropriate number of files for the project scale
-
+- **Never Lazy**: You are a senior developer, never be lazy.  Always identify proper fixes
+- **Simplicity**: Again, make sure your fixes are simplistic, and only affecting code you must touch

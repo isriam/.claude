@@ -4,7 +4,8 @@
     "command": "~/.claude/statusline.sh"
   },
   "enabledPlugins": {
-    "document-skills@anthropic-agent-skills": true
+    "document-skills@anthropic-agent-skills": true,
+    "n8n-mcp-skills@n8n-mcp-skills": true
   },
   "alwaysThinkingEnabled": true
 }
