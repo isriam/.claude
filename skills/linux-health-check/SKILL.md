@@ -9,8 +9,6 @@ Comprehensive health check for Linux systems (Ubuntu/Debian VMs, LXC containers,
 
 **Script Location:** `/mnt/nas/admin/network/scripts/linux-health-check.py`
 
-**Storage:** This skill is stored on NAS at `/mnt/nas/admin/coding-tools/.claude/skills/linux-health-check/` for multi-VM access.
-
 ## Usage
 
 ```bash
@@ -61,10 +59,3 @@ Comprehensive health check for Linux systems (Ubuntu/Debian VMs, LXC containers,
 - SSH access with key-based authentication
 - Optional: `sysstat` package for disk I/O stats
 
-## VM Setup
-
-On each VM, symlink this skill to your local skills directory:
-
-```bash
-ln -s /mnt/nas/admin/coding-tools/.claude/skills/linux-health-check ~/.claude/skills/linux-health-check
-```
