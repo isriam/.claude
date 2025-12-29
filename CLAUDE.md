@@ -27,11 +27,8 @@
 
 # Skills Storage Locations
 - **Local Skills**: `~/.claude/skills/` (standard location)
-- **NAS Skills Archive**: `/mnt/nas/admin/pc-backup/Documents/python/.claude/skills/`
-  - Long-term storage for skills that need to be accessible from multiple systems
-  - Skills stored here should be symlinked to `~/.claude/skills/` for Claude Code access
-  - Uses NAS venv at `/mnt/nas/admin/pc-backup/Documents/python/venv`
-  - Current NAS-stored skills: network-health-check
+- **NAS Skills Archive**: `/mnt/nas/admin/network/scripts/` (python apps)
+  - Current NAS-stored skills: network-health-check, linux-health-check, docker-health-check
 
 # My Preferences
 - I prefer tackling problems one at a time
