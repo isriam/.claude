@@ -9,8 +9,6 @@ Comprehensive health check across all network infrastructure devices.
 
 **Script Location:** `/mnt/nas/admin/network/scripts/network-health-check.py`
 
-**Storage:** This skill is stored on NAS at `/mnt/nas/admin/coding-tools/.claude/skills/network-health-check/` for multi-VM access.
-
 ## Usage
 
 ```bash
@@ -45,11 +43,3 @@ Color-coded status output with critical/warning alerts. Green checkmark = health
 
 - **0**: All checks passed (no critical issues)
 - **1**: One or more critical issues detected
-
-## VM Setup
-
-On each VM, symlink this skill to your local skills directory:
-
-```bash
-ln -s /mnt/nas/admin/coding-tools/.claude/skills/network-health-check ~/.claude/skills/network-health-check
-```
