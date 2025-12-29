@@ -9,8 +9,6 @@ Comprehensive health check for high-risk Docker containers.
 
 **Script Location:** `/mnt/nas/admin/network/scripts/docker-health-check.py`
 
-**Storage:** This skill is stored on NAS at `/mnt/nas/admin/coding-tools/.claude/skills/docker-health-check/` for multi-VM access.
-
 ## Usage
 
 ```bash
@@ -48,11 +46,3 @@ Comprehensive health check for high-risk Docker containers.
 
 - **JSON** (default): Structured data with device health, summary, and issues
 - **Text**: Human-readable output with severity indicators
-
-## VM Setup
-
-On each VM, symlink this skill to your local skills directory:
-
-```bash
-ln -s /mnt/nas/admin/coding-tools/.claude/skills/docker-health-check ~/.claude/skills/docker-health-check
-```
