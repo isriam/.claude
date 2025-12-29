@@ -7,5 +7,6 @@
     "document-skills@anthropic-agent-skills": true,
     "n8n-mcp-skills@n8n-mcp-skills": true
   },
-  "alwaysThinkingEnabled": true
+  "alwaysThinkingEnabled": true,
+  "model": "opus"
 }
