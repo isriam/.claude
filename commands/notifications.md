@@ -1,4 +1,27 @@
-.claude/settings.json
+<!--
+=============================================================================
+NOTIFICATION WEBHOOK TOGGLE
+=============================================================================
+
+WHAT THIS DOES:
+  Toggles n8n webhook notifications on/off by creating/removing a file.
+  Hooks in settings.json check for this file before sending webhooks.
+
+TOGGLE FILE:
+  ~/.claude/notifications-enabled
+
+WEBHOOK URL:
+  https://n8n.mediaserver.me/webhook/claude-notification
+
+EVENTS CONFIGURED (in ~/.claude/settings.json):
+  - Notification: Permission prompts, idle waiting, auth events
+  - Stop: When Claude finishes responding
+
+HOOKS LOCATION:
+  ~/.claude/settings.json → "hooks" section
+
+TO MODIFY HOOKS:
+  1. Edit ~/.claude/settings.json
   2. Find the "hooks" section
   3. Change the webhook URL or add/remove events
   4. Restart Claude for changes to take effect
