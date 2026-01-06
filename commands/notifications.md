@@ -39,8 +39,8 @@ TO ADD MORE EVENTS:
   }]
 
 CLOUDFLARE ACCESS HEADERS:
-  CF-Access-Client-Id: a987c1888e4f0dfa183afee90a05e468.access
-  CF-Access-Client-Secret: f8fbfb8f5f19c523a2167a2d56f7fc0341781247f9ebf473a2f43b24af0a2f4b
+CF-Access-Client-Id: f097c1afcbfe9729b5b771f3ad02b825.access
+CF-Access-Client-Secret: b1eb9a3385f005dda7dde299bad644b5c7cedcf182f77fd651c1c97297df49df
 
 =============================================================================
 -->
