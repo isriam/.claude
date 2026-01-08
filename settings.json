@@ -1,4 +1,12 @@
 {
+  "env": {},
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [],
+    "deny": []
+  },
+  "model": "opus",
+  "hooks": {},
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh"
@@ -6,7 +14,5 @@
   "enabledPlugins": {
     "document-skills@anthropic-agent-skills": true,
     "n8n-mcp-skills@n8n-mcp-skills": true
-  },
-  "alwaysThinkingEnabled": true,
-  "model": "opus"
+  }
 }

@@ -1,5 +1,5 @@
 ---
-name: summarize-chat
+name: summarize
 description: Summarize the current conversation and save to SUMMARY.md for project continuity. Use when finishing a session or before compacting. Optionally specify a custom path after the command.
 allowed-tools:
   - Read

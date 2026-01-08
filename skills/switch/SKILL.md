@@ -1,6 +1,8 @@
- ---
-name: switch-login
+---
+name: switch
 description: Switch between Claude Code accounts using the multi-account switcher.
+allowed-tools:
+  - Bash(~/ccswitch.sh:*)
 ---
 
 # Switch Login
