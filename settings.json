@@ -5,7 +5,6 @@
     "allow": [],
     "deny": []
   },
-  "model": "opus",
   "hooks": {},
   "statusLine": {
     "type": "command",

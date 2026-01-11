@@ -10,12 +10,12 @@
 
 # System Information
 <!-- Machine-specific info - update for each system -->
-- OS: [Your OS]
-- RAM: [Your RAM]
-- CPU: [Your CPU cores]
-- Architecture: [Your architecture]
-- Hostname: [Your hostname]
-- User: [Your username]
+- OS: kde neon
+- RAM: 32GB
+- CPU: 8
+- Architecture: 64x86
+- Hostname: jw-laptop
+- User: jeremy
 
 # Python Environment
 - **Shared Virtual Environment**: `~/.claude/venv`
@@ -27,8 +27,7 @@
 
 # Skills Storage Locations
 - **Local Skills**: `~/.claude/skills/` (standard location)
-- **NAS Skills Archive**: `/mnt/nas/admin/network/scripts/` (python apps)
-  - Current NAS-stored skills: network-health-check, linux-health-check, docker-health-check
+- **Github Backup**: `~/.claude/` is a git repo
 
 # My Preferences
 - I prefer tackling problems one at a time
