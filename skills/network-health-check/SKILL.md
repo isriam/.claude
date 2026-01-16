@@ -1,6 +1,6 @@
 ---
 name: network-health-check
-description: Comprehensive network infrastructure health monitoring. Monitors FortiGate firewall, Proxmox hypervisor, VMs, LXC containers, Mist WiFi AP, PiHole DNS, and device correlation. Use when checking network health, infrastructure status, or diagnosing network issues.
+description: Comprehensive network infrastructure health monitoring. Monitors hypervisors, VMs, LXC containers, Docker hosts, and device correlation on the local network. Use when checking network health, infrastructure status, or diagnosing network issues.
 ---
 
 # Network Health Check Skill
@@ -21,12 +21,10 @@ Comprehensive health check across all network infrastructure devices.
 
 ## Devices Monitored
 
-- **FortiGate Firewall** - System status, CPU, memory, WAN interfaces, sessions
-- **Proxmox Hypervisor** - CPU load, memory, disk, LXC containers, VMs, NFS
-- **Mist WiFi AP** - Connection status, uptime, client count, cloud monitoring
-- **PiHole DNS** - DNS statistics, blocked queries, blocklist health
-- **Docker Hosts** - Container health, service status
-- **WireGuard VPN** - Interface status, peer connections
+Devices are defined in the inventory file. The health check dynamically reads from:
+`/mnt/nas/admin/network/inventory/inventory.yml`
+
+Typical device types include hypervisors, VMs, LXC containers, Docker hosts, network devices, and DNS servers.
 
 ## Output
 
@@ -36,7 +34,7 @@ Color-coded status output with critical/warning alerts. Green checkmark = health
 
 - Python 3.8+
 - SSH access to network devices
-- Inventory file: `/mnt/nas/admin/network/inventory/inventory-simple.yaml`
+- Inventory file: `/mnt/nas/admin/network/inventory/inventory.yml`
 - Python packages: `pyyaml`, `requests`
 
 ## Exit Codes
